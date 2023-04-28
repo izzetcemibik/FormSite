@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elemanları</title>
+</head>
+<body style="background-color: bisque;">
+    <form action="bilgi.html">
+        <fieldset style="border: 10px solid blue;"> <!-- bu yapılcak fırmun etrafından çizgi şeklinde çerçeve çizer-->
+            <legend style="font-weight: bold;">Form Input Elemanları</legend><!-- buda o çevçeve içine çizgilerin bi kısmını silip başlığı koyar-->
+            <table>
+                <tr>
+                    <td>Adı:</td>
+                    <td><input type="text" name="adi"></td> <!--isim yazılcağı için text olarak açıyoruz o alana name de isim verioz ama o gözükmüo bi üste yazdığım gözüküo eğer direkt yazılacak kısmın dibinde yazsın istiosak o üçgenlerden hemen sonrsa yazarsak sağ başına yazasak soluna vbitişik yazıyo ama biz burda tablo gibi yaptığımızdan başlıkları ayrı yazdık bir aşağıda tiklemeli şeylerde mesela üçgenin sağına yazdık ki butonun he men yanında gözüksün-->
+                </tr>
+                <tr>
+                    <td>Soyadı:</td>
+                    <td><input type="text"name="soyadi"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email"></td> <!--burda email olduğuından inputun type ı email oluo -->
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="sifre" id=""></td> <!--şifre olduğundan dolayı type ı password seçtik-->
+                </tr>
+                <tr>
+                    <td>Cinsiyet:</td>
+                    <td>
+                        <input type="radio" name="cinsiyet" value="erkek">Erkek <!--birden fazla seçimden bi tane seçebiliosak mesela bu cinsitteki gibi radio kullanıyoruz-->
+                        <input type="radio" name="cinsiyet" value="kadin">Kadın
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobiler:</td>
+                    <td>
+                        <input type="checkbox" name="kitap" value="kitap">Kitap Okumak <!--checkbox adı üstüne istediğin kadarını işaretleyebiliyosun ne yapıosan işaretlersin gibi-->
+                        <input type="checkbox" name="müzik" value="müzik">Müzik Dinlemek
+                        <input type="checkbox" name="film" value="film">Film İzlemek
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Gönder"> <!--submit gönderle aynı mantık zaten bu buton olduğu için name kısmına yazdığımızda direkt butyonun üstünde yazar name kısmına yazdığın bunda normal butonda kullanılır mı type olarak bilmiyoruım-->
+                        <input type="button" value="Düzenle"> <!--bu da düzenleme butonu bunda type olarak button kullanıyoruz direkt-->
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <hr>
+        <fieldset style="border: 10px solid darkcyan">
+            <legend style="font-weight: bold;">Diğer Form Elemanları</legend>
+            <table cellpadding="10px" cellpacing="10px">
+                <tr>
+                    <td>Programlama</td>
+                    <td>
+                        <select id="programlama">           <!--sitelerdeki tıklayınca aşağıda doğru seç.enek sıralanan şeyi yaptık ama böyle yapınca seçmesen bile bi seçenek gösterio bi aşağıdaki örnekte mesela o kutu boş gözüküo tıklayınca aşağıda seçenekler çıkıyo-->
+                            <option>Javascript</option>
+                            <option>HTML</option>
+                            <option>CSS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Datalist Kullanımı</td>
+                    <td>
+                        <input list="browser">
+                        <datalist id="browser">     <!--seçenekler kutusu ama tıklayınca seçenekler gözüküo öbür türlü kutu boş duruo-->
+                            <option value="Firefox"></option>
+                            <option value="Chrome"></option>
+                            <option value="Opera"></option>
+                            <option value="Safari"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>            
+                        <textarea name="address" cols="30" rows="10"></textarea>    <!--burasıda bildiğimiz adres yazma kutucu trendyoldaki falan -->
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
